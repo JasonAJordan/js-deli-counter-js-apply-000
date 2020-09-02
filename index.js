@@ -6,4 +6,19 @@ function takeANumber(katzDeliLine, name){
   return `Welcome, ${name}. You are number ${num} in line.`
 }
 
-function 
+function currentLine(katzDeliLine){
+  let newArray = [];
+  
+  for (let i = 0; i < katzDeliLine.length; i++){
+      let person = katzDeliLine[i];
+      let num = i + 1;
+      
+      let inLine = `${num}. ${name}`;
+      newArray.push(inLine);
+    
+  }
+  let string = newArray.join(', ');
+  
+  return "The line is currently: " + string;
+  
+}
