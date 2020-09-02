@@ -13,7 +13,7 @@ function currentLine(katzDeliLine){
       let person = katzDeliLine[i];
       let num = i + 1;
       
-      let inLine = `${num}. ${name}`;
+      let inLine = `${num}. ${person}`;
       newArray.push(inLine);
     
   }
