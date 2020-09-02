@@ -9,6 +9,10 @@ function takeANumber(katzDeliLine, name){
 function currentLine(katzDeliLine){
   let newArray = [];
   
+  if (katzDeliLine.length === 0){
+    return "The line is currently empty."
+  }
+  
   for (let i = 0; i < katzDeliLine.length; i++){
       let person = katzDeliLine[i];
       let num = i + 1;
@@ -24,6 +28,10 @@ function currentLine(katzDeliLine){
 }
 
 function nowServing(katzDeliLine){
+  if (katzDeliLine.length === 0){
+    return "There is nobody waiting to be served!"
+  }
+  
   let beingServed  = katzDeliLine.shift();
   return `Currently serving ${beingServed}.`
 }
