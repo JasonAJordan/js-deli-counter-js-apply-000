@@ -22,3 +22,8 @@ function currentLine(katzDeliLine){
   return "The line is currently: " + string;
   
 }
+
+function nowServing(katzDeliLine){
+  
+  
+}
